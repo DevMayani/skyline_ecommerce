@@ -1,4 +1,6 @@
 
+import CategoryComp from "@/components/categoryComp";
+import FlashSalesComp from "@/components/flashSalesComp";
 import Hero from "@/components/hero";
 import Head from "next/head";
 
@@ -26,6 +28,8 @@ export default function Home() {
 
       <main>
 <Hero />
+<FlashSalesComp />
+<CategoryComp />
       </main>
     </>
   );
