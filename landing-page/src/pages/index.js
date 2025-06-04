@@ -1,4 +1,6 @@
-
+import '@fontsource/inter'; // Defaults to weight 400
+import '@fontsource/inter/400.css';
+import '@fontsource/inter/700.css';
 import CategoryComp from "@/components/categoryComp";
 import FlashSalesComp from "@/components/flashSalesComp";
 import Hero from "@/components/hero";

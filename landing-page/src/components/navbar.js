@@ -45,10 +45,10 @@ const NavBar = () => {
             <Link href={`/`} className="">Home</Link>
           </li>
           <li className="hover:text-[#8644DB]">
-            <Link href={`/contactus`} className="">Contact</Link>
+            <Link href={`/contactUs`} className="">Contact</Link>
           </li>
           <li className="hover:text-[#8644DB]">
-            <Link href={`/aboutus`} className="">About</Link>
+            <Link href={`/aboutUs`} className="">About</Link>
           </li>
           <li className="hover:text-[#8644DB]">
             <Link href={`/signUp`} className="">Sign Up</Link>
@@ -105,13 +105,13 @@ const NavBar = () => {
               <Link href={`/`} className="">Home</Link>
             </li>
             <li className="hover:text-[#8644DB]">
-              <Link href={`/contactus`} className="">Contact</Link>
+              <Link href={`/contactUs`} className="">Contact</Link>
             </li>
             <li className="hover:text-[#8644DB]">
-              <Link href={`/aboutus`} className="">About</Link>
+              <Link href={`/aboutUs`} className="">About</Link>
             </li>
             <li className="hover:text-[#8644DB]">
-              <Link href={`/signup`} className="">Sign Up</Link>
+              <Link href={`/signUp`} className="">Sign Up</Link>
             </li>
           </ul>
         </div>
