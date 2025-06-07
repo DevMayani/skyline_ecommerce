@@ -16,6 +16,7 @@ import {TiSocialFacebook} from 'react-icons/ti'
 import {CiTwitter} from 'react-icons/ci'
 import {LiaLinkedinIn} from 'react-icons/lia'
 import {AiOutlineSend,AiOutlineInstagram} from 'react-icons/ai'
+import DeliveryComp from '@/components/deliveryComp'
 
 const AboutUs = () => {
   const details = [
@@ -51,13 +52,13 @@ const AboutUs = () => {
     },
     {
       id:2,
-      Image:cookie,
+      Image:cookiefour,
       title:"24/7 CUSTOMER SERVICE",
       subtext:"Friendly 24/7 customer support",
     },
     {
       id:3,
-      Image:cookie,
+      Image:cookietwo,
       title:"MONEY BACK GUARANTEE",
       subtext:"Refund within 30 days",
     },
@@ -108,38 +109,7 @@ const AboutUs = () => {
   ))}
 </div>
 
-
-      {/* <div className="flex flex-col items-center gap-2">
-      <Image
-  src={ceo}
-  priority
-  alt="ceo-png"
-  className="rounded w-[50%] lg:w-[20%] h-auto object-cover"
-/>
-
-        <p className="text-sm md:text-xl lg:text-lg xl:text-xl mt-4 font-medium">Benjamin Arobani</p>
-      <p className='text-xs md:text-lg lg:text-sm'>CEO</p>
-     
-      <div className="flex items-center gap-2 md:gap-4">
-      <CiTwitter className="h-5 w-5 md:w-6 md:h-6 lg:w-8 lg:h-8" />
-      <AiOutlineInstagram className="h-5 w-5 md:w-6 md:h-6 lg:w-8 lg:h-8" />
-      <LiaLinkedinIn className="h-5 w-5 md:w-6 md:h-6 lg:w-8 lg:h-8" />
-      </div>
-      </div> */}
-
-     <div className="flex flex-col lg:flex-row items-center justify-center py-16 gap-y-6 md:py-20 lg:gap-y-10">
-      {
-        services.map((items) => (
-          <div key={items.id} className=" flex flex-col items-center justify-center gap-2">
-          <Image src={items.Image} className="object-cover w-[30%] h-auto" />
-          <p className="text-sm md:text-xl lg:text-lg xl:text-base font-bold text-center">{items.title}</p>
-          <p className="text-xs md:text-lg lg:text-sm text-center">{items.subtext}</p>
-        </div>
-        ))
-      }
-    
-      
-     </div>
+     <DeliveryComp />
 
     </div>
   )

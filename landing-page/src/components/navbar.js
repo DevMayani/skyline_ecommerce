@@ -25,9 +25,11 @@ const NavBar = () => {
   return (
     <div className=" md:px-16 md:py-8 lg:px-20 lg:py-6 flex flex-col lg:flex-row lg:items-center lg:justify-between border-b-1 border-b-gray-200 ">
       <div className="flex items-center justify-between px-5 pt-5 pb-2 md:p-0">
-       <p className="text-black font-extrabold text-xl md:text-4xl lg:text-xl xl:text-2xl hover:text-[#8644DB] animate-bounce">
+      <Link href={`/`}>
+      <p className="text-black font-extrabold text-xl md:text-4xl lg:text-xl xl:text-2xl hover:text-[#8644DB] animate-bounce">
   Skyline
 </p>
+      </Link>
 
         <button onClick={handleMenuClick} className='block lg:hidden'>
         {showMenuContent ? (

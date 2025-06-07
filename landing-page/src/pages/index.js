@@ -5,6 +5,11 @@ import CategoryComp from "@/components/categoryComp";
 import FlashSalesComp from "@/components/flashSalesComp";
 import Hero from "@/components/hero";
 import Head from "next/head";
+import BestSellerComp from '@/components/bestSellerComp';
+import ExploreProductsComp from '@/components/exploreProductComp';
+import DeliveryComp from '@/components/deliveryComp';
+import ExperienceCat from '@/components/experienceCat';
+import NewArrivalComp from '@/components/newArrivalComp';
 
 export default function Home() {
   return (
@@ -32,6 +37,11 @@ export default function Home() {
 <Hero />
 <FlashSalesComp />
 <CategoryComp />
+<BestSellerComp />
+<ExperienceCat />
+<ExploreProductsComp />
+<NewArrivalComp />
+<DeliveryComp />
       </main>
     </>
   );
