@@ -63,7 +63,7 @@ const Checkout = () => {
 
           {/* Order Summary */}
           <div className="flex-1 flex flex-col items-start justify-between px-0 py-10 md:py-16 lg:py-0 lg:px-20">
-            <p className="font-medium text-xl md:text-3xl lg:text-2xl py-5">Your Order</p>
+            
             <div className="w-full">
               {cartItems.map((item, index) => (
                 <div key={index} className="flex items-center justify-between py-2 md:py-4 lg:py-3">
@@ -77,11 +77,11 @@ const Checkout = () => {
             </div>
 
             {/* Subtotal & Total */}
-            <div className="flex justify-between py-2 md:py-4 text-xs md:text-lg lg:text-sm w-full border-b">
+            <div className="flex justify-between py-2 md:py-4 text-xs md:text-lg lg:text-sm w-full border-b border-b-gray-300">
               <p>Subtotal:</p>
               <p>${calculateTotal()}</p>
             </div>
-            <div className="flex justify-between py-2 md:py-4 w-full border-b text-xs md:text-lg lg:text-sm">
+            <div className="flex justify-between py-2 md:py-4 w-full border-b border-b-gray-300 text-xs md:text-lg lg:text-sm">
               <p>Shipping:</p>
               <p>Free delivery</p>
             </div>

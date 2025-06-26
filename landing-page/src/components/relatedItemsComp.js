@@ -9,7 +9,7 @@ import { LuEye } from "react-icons/lu";
 import Image from "next/image";
 import { IoIosArrowRoundForward, IoIosArrowRoundBack } from "react-icons/io";
 
-const BestSellerComp = () => {
+const RelatedItemsComp = () => {
   const [products, setProducts] = useState([]);
   const [likedItems, setLikedItems] = useState({});
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -55,27 +55,13 @@ useEffect(() => {
   if (!products.length) return <div>Loading...</div>;
 
   return (
-    <div className="p-5 md:px-16 md:pb-10 lg:px-20">
+    <div >
         {/* Header */}
         <div className="flex gap-2 md:gap-4 items-center py-6">
         <div className="border-[#8644DB] border-6 md:border-7 rounded h-[5vh]"></div>
         <p className="text-[#8644DB] text-sm md:text-lg lg:text-sm">
-         This Month
+        Related Items
         </p>
-      </div>
-
-      {/* Title and arrows */}
-      <div className="flex justify-between items-center pb-10">
-        <div>
-          <h2 className="text-xl md:text-3xl font-semibold">
-            Best Selling Products
-          </h2>
-        </div>
-        <Link href={`/bestsellingproductpage`} className="flex justify-center  bg-yellow-500">
-        <button className="bg-[#8644DB] text-white py-2 px-6 rounded hover:opacity-90 transition text-xs md:text-lg lg:text-sm">
-          View All
-        </button>
-      </Link>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 py-4 md:py-8 transition-all duration-300">
@@ -131,4 +117,4 @@ useEffect(() => {
   );
 };
 
-export default BestSellerComp;
+export default RelatedItemsComp;

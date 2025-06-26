@@ -6,7 +6,7 @@ import { CartProvider } from "@/context/CartContext"; // 👈 import your contex
 export default function App({ Component, pageProps: { session, ...pageProps } }) {
   return (
     <SessionProvider session={session}>
-      <CartProvider> {/* ✅ Wrap your app with CartProvider */}
+      <CartProvider> 
         <Layout>
           <Component {...pageProps} />
         </Layout>
